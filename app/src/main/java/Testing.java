@@ -8,6 +8,7 @@ public class Testing {
 
     public void testing(){
         Log.i("Testing", "Testing commits");
+        Log.i("Testing", "Testing commits");
     }
 
 }
