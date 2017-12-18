@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jerma.mobilegroupproject.HistoryFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/avg_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/avg_textView"
+                style="@style/TitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/average_refuel_cost_last_month" />
+
+            <TextView
+                android:id="@+id/price_textView"
+                style="@style/InfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/avg_textView"
+                android:text="$56" />
+
+            <TextView
+                android:id="@+id/total_textView"
+                style="@style/TitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price_textView"
+                android:layout_marginTop="8dp"
+                android:text="Total gas purchased last month" />
+
+            <TextView
+                android:id="@+id/qty_textView"
+                style="@style/InfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_textView"
+                android:layout_marginBottom="4dp"
+                android:text="38 Litres" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/history_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/avg_cardView"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

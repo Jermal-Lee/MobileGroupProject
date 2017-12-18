@@ -16,6 +16,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Automobile"
+            android:label="@string/automobile"
+            android:parentActivityName=".MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+
+        <activity android:name=".RefuelActivity"
+            android:parentActivityName=".Automobile">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Automobile"
+                />
+        </activity>
     </application>
 
 </manifest>
